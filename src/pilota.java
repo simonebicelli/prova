@@ -24,7 +24,7 @@ public class pilota {
         }
         else{
             System.out.println(" puoi guidare ");
-        this.età = età;}
+        this.età = 20;}
     }
     public void setDestinazione(String destinazione) {
         if (destinazione == "reggiocalabria") {
@@ -32,11 +32,11 @@ public class pilota {
             
         }
         else {System.out.println(" calcolo etinerario.......... calcolo concluso ");}
-        this.destinazione = destinazione;
+        this.destinazione = "Roma";
     }
     public void setKm(int km) {
         
-        this.km = km;
+        this.km = 130;
 
     }
     @Override
