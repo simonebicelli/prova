@@ -57,6 +57,11 @@ if (datapatente == "11 12 2029") {
 }
 
 System.out.println("la data di scadenza della patente è: " + datapatente);
+
+autonoleggio autonoleggio2 = new autonoleggio(30, "despacito", "13/10/2023");
+    
+System.out.println(autonoleggio2);
+
 }
 
     
