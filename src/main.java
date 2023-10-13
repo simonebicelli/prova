@@ -6,7 +6,7 @@ public class main {
         
 public static void main(String[] args) {
   pilota pilota2 = new pilota(18, "roma", 530);
-patente data = new patente(0, "19 03 2025", false)
+
 
  System.out.println("i dati sono: "+ pilota2 );
  System.out.println("marca: " + "Mercedes-Benz"); 
@@ -49,8 +49,14 @@ LocalTime orarioFuturo = orarioCorrente.plusHours(2).plusMinutes(15);
         System.out.println("Data futura: " + dataFutura);
         System.out.println("Orario futuro: " + orarioFuturo);
  
-  
+ String datapatente = "11 12 2029";
 
+if (datapatente == "11 12 2029") {
+        datapatente = "scaduta";
+        
+}
+
+System.out.println("la data di scadenza della patente è: " + datapatente);
 }
 
     
