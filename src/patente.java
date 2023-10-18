@@ -2,10 +2,10 @@ import javax.print.DocFlavor.CHAR_ARRAY;
 
 public class patente {
     private int punti;
-    private String datapatente;
+    private int datapatente;
     private boolean presente;
 
-    public patente(int punti, String data, boolean presente) {
+    public patente(int punti, int data, boolean presente) {
         this.punti = punti;
         this.datapatente = data;
         this.presente = presente;
@@ -16,10 +16,10 @@ public class patente {
     public void setPunti(int punti) {
         this.punti = punti;
     }
-    public String getData() {
+    public int getData() {
         return datapatente;
     }
-    public void setData(String data) {
+    public void setData(int data) {
         this.datapatente = data;
     }
     public boolean isPresente() {

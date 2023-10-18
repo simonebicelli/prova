@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "main_legdafile",
+            "request": "launch",
+            "mainClass": "main_legdafile",
+            "projectName": "Prova_710a8b64"
+        },
+        {
+            "type": "java",
+            "name": "main_secondo",
+            "request": "launch",
+            "mainClass": "main_secondo",
+            "projectName": "Prova_710a8b64"
+        },
+        {
+            "type": "java",
             "name": "main",
             "request": "launch",
             "mainClass": "main",

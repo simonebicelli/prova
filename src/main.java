@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.Scanner;
 import java.time.LocalDateTime;
 
 public class main {
@@ -7,6 +8,14 @@ public class main {
 public static void main(String[] args) {
   pilota pilota2 = new pilota(18, "roma", 530);
 
+Scanner scanner = new Scanner(System.in);
+System.out.print("Inserisci qualcosa da tastiera: "); 
+
+String input = scanner.nextLine(); 
+
+System.out.println("Hai inserito: " + input); 
+
+scanner.close();  
 
  System.out.println("i dati sono: "+ pilota2 );
  System.out.println("marca: " + "Mercedes-Benz"); 
@@ -49,14 +58,22 @@ LocalTime orarioFuturo = orarioCorrente.plusHours(2).plusMinutes(15);
         System.out.println("Data futura: " + dataFutura);
         System.out.println("Orario futuro: " + orarioFuturo);
  
- String datapatente = "11 12 2029";
+ int datapatente = 2-1-2023;
 
-if (datapatente == "11 12 2029") {
-        datapatente = "scaduta";
-        
+if ( datapatente >= 16-10-2023) {
+        System.out.println("la patente è scaduta");
 }
+else{System.out.println("la patente è valida");}
 
-System.out.println("la data di scadenza della patente è: " + datapatente);
+try {
+        int result = 10/0;
+} catch (ArithmeticException e) {
+        System.out.println("errore: divisione per zero non consentita ");
+e.printStackTrace();
+       
+}finally{
+        System.out.println("operazione completata");
+}
 
 autonoleggio autonoleggio2 = new autonoleggio(30, "despacito", "13/10/2023");
     
